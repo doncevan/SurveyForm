@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banking Experience Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Banking Experience Survey</h1>
+      <p id="description">
+        We value your feedback. Please fill out this survey to help us improve our services.
+      </p>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age:</label>
+          <input
+            type="number"
+            id="number"
+            name="age"
+            min="18"
+            max="100"
+            placeholder="Enter your age"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="dropdown">How often do you visit our bank?</label>
+          <select id="dropdown" name="visit-frequency" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="rarely">Rarely</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Rate our customer service:</p>
+          <input type="radio" id="service1" name="customer-service" value="excellent" required />
+          <label for="service1">Excellent</label>
+          <input type="radio" id="service2" name="customer-service" value="good" />
+          <label for="service2">Good</label>
+          <input type="radio" id="service3" name="customer-service" value="average" />
+          <label for="service3">Average</label>
+          <input type="radio" id="service4" name="customer-service" value="poor" />
+          <label for="service4">Poor</label>
+        </div>
+        <div class="form-group">
+          <p>Which of our services do you use? (Select all that apply)</p>
+          <input type="checkbox" id="service-online" name="services" value="online-banking" />
+          <label for="service-online">Online Banking</label>
+          <input type="checkbox" id="service-loan" name="services" value="loan-services" />
+          <label for="service-loan">Loan Services</label>
+          <input
+            type="checkbox"
+            id="service-investment"
+            name="services"
+            value="investment-advice"
+          />
+          <label for="service-investment">Investment Advice</label>
+          <input type="checkbox" id="service-others" name="services" value="other-services" />
+          <label for="service-others">Other Services</label>
+        </div>
+        <div class="form-group">
+          <label for="comments">Additional Comments:</label>
+          <textarea
+            id="comments"
+            name="comments"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="comment-area">Describe your experience:</label>
+          <textarea
+            id="comment-area"
+            name="comment-area"
+            placeholder="Share your banking experience..."
+          ></textarea>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
