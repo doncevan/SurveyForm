@@ -5,15 +5,15 @@ body {
   background-attachment: fixed;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #5d9c64;
 }
 
 .container {
   max-width: 700px;
   margin: 50px auto;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.938);
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
